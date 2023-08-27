@@ -100,10 +100,10 @@ pipeline {
 }      
 // sh 'docker push ${ECRREGISTRY}/${IMAGENAME}:${IMAGE_TAG}'
     
-    post {
-        always {
-            junit 'target/surefire-reports/TEST-*.xml'
-            deleteDir()
-        }
-    }
-}
+//     post {
+//         always {
+//             junit 'target/surefire-reports/TEST-*.xml'
+//             deleteDir()
+//         }
+//     }
+// }
